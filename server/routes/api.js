@@ -18,7 +18,7 @@ let filename = '';
 const upload = multer({
   storage: multerS3({
     s3: s3,
-    bucket: 'gotchya.uploads',
+    bucket: 'XXXXXX.uploads',
     metadata: function (req, file, cb) {
       cb(null, { fieldName: file.fieldname });
     },
